@@ -1,10 +1,6 @@
-# make firebase function install
+# make firebase function deploy
 
-default: deploy
-
-depends: functions/node_modules
+deploy: 
 	cd functions; npm install
-
-deploy: depends
 	firebase use --add $(FIREBASE_PROJECT)
 	firebase deploy --only functions
