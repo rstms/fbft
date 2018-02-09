@@ -1,1 +1,2 @@
-# fbft
+Firebase Function Test
+----------------------
